@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sketch and Guess</title>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/indexStyle.css">
+</head>
+<body>
+<div  id="login">
+	<div id="title">
+		<b>Sketch And Guess</b>
+	</div>
+	<div id="instruction">
+		<b>Message:</b><br />
+		Draw a word which is display when it's your turn. And simply <br/> trying guessing
+		when others are draw and before the time runs out.<br/>
+		Enter your username and clicking <span><b>Play!</b></span>
+		<br /><br />
+		<button id="instructionbtn" type="button" name="instruction">Instruction</button>
+	</div>
+	
+	
+	<form name="usernameForm" method="GET"  action="game.html" onsubmit="return validateForm()" >
+		<input id="username" type="text" autofocus="" name="username" autocomplete="off" placeholder="Input Username" maxlength="10">
+		<div id="nameerror">Sorry, this is invalid.</div>
+		<input id="startGame" type="submit" value="Play">
+	</form>
+</div>
+
+
+<script type="text/javascript">
+
+function validateForm(){
+
+	var x = document.forms["usernameForm"]["username"].value;
+    if (x == null || x == "") {
+        document.getElementById('nameerror').style.display = "block";
+        return false;
+    }
+	
+	if(!x.match(/^[a-z]+$/i)){
+		document.getElementById('nameerror').style.display = "block";
+		return false;
+	}
+	return true;
+}
+
+
+
+$(function(){
+
+	$("#instructionbtn").click(function(){
+		window.open("instruction.html", '_blank');
+	});
+
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+div {
+    display: block;
+}
+
+html, #chatInput {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+body {
+
+    margin:0;
+    padding:0;
+}
+
+
+
+#login {
+    position: absolute;
+    background-color: rgba(44,62,80,0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+#title {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 30px;
+    color:  #D3D3D3;
+    margin-bottom: 1%;
+    width: 20%;
+    margin-left: 40%;
+}
+
+#instruction {
+    text-align: center;
+    margin-top: 0%;
+    font-size: 15px;
+    font-weight: 200;
+    color: white;
+    margin-bottom: 2%;
+    width: 50%;
+    margin-left: 25%;
+}
+
+#username {
+    margin-left: 40%;
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+    border: solid 1px #dcdcdc;
+    transition: box-shadow 0.3s, border 0.3s;
+    box-sizing: border-box;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+#startGame {
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+    width: 20%;
+    margin-left: 40%;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: large;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #2ecc71;
+    border: 0;
+    border-bottom: 2px solid #28be68;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #28be68;
+    box-shadow: inset 0 -2px #28be68;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#startGame:active, #startGame:hover {
+    top: 1px;
+    background: #55D88B;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#nameerror {
+    width: 20%;
+    margin-left: 40%;
+    margin-top: -15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: #E74C3C;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    display: none;
+}
+
+
+#instructionbtn {
+    width:20%;
+    background: #3e9cbf;
+    padding: 8px 14px 10px;
+    margin-bottom:2%;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 5px 0px 0px #205c73, 0px 10px 5px #999;
+    box-shadow: inset 0px 1px 0px #3e9cbf, 0px 5px 0px 0px #205c73, 0px 10px 5px #999;
+    border:1px solid #3e9cbf;
+    cursor:pointer;
+    font-size:10px;
+    text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    -webkit-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 5px 0px 0px #205c73, 0px 10px 5px #999;
+    -moz-border-radius: 10px;
+
+}
+
+
+#instructionbtn:hover, #instructionbtn:focus {
+    color:#dfe7ea;
+    -webkit-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
+    -moz-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
+    box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
+}

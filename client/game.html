@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sketch and Guess</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:bold' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+
+    <div id="container">
+        <div id="header">
+            Sketch and Guess
+        </div>
+        <div>
+            <p>Please follow the <b>instructions</b> in the CHAT.</p>
+        </div>
+
+        <div id="links"  align="center">
+            <span id="tools">
+                Pen/Eraser Size:<select id="pen-size"></select>
+                <!--Choose color: <input type="color" id="color-chooser">-->
+                Color: <input class="jscolor {onFineChange:'update(this)'}" value="ffcc00">
+                <button id="draw">Draw</button>
+                <button id="eraser">Eraser</button>
+                <button id="eraser-all">Clear</button>
+            </span>
+            Name:<input type="text" id="player-Name" disabled>
+        </div>
+
+
+        <div id="sidebar1">
+            <div id="timer">
+                Time Left: <span id="time">00:00</span>
+            </div>
+
+            <div id="drawer">
+                Status:  <p><span id="statues"></span></p>
+            </div>
+
+            <div id="scoreboard">
+                Scoreboard<br>
+                <p id="score-text"></p>
+            </div>
+
+            <div id="chatDisplay">
+                <div id="chat"></div>
+            </div>
+            <div id="sendMeg">
+                Message: <input type="text" id="input" autocomplete="off">
+                <input type="button" value="Send" id="send">
+                <input type="button" value="Reset" id="reset">
+                <input type="button" value="Finish" id="restart">
+            </div>
+        </div>
+
+
+
+
+        <div id="content">
+            <div id="title">
+                WORD: <!--<input type="text" id="guess-word" disabled>--><span id="title_word"></span>
+            </div>
+            <div id="Content_Container">
+                <canvas id="draw-board" width="600" height="400" style="border:1px solid #000000" ></canvas>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>Copyright © 2016 Jackil Rajnicant</p>
+        </div>
+    </div>
+
+    <section id="popup" class="hide">
+        <div id="popup-bg"></div>
+        <div id="popup-box">
+            <div id="popup-box-content">
+                <h1><span id="winner">Jackil</span></h1>
+                <p>Player Score:</p><p id="score">12</p>
+            </div>
+            <h2>GAME OVER!! <br/>Restarting...</h2>
+            <button id="restartBtn">Restart</button>
+        </div>
+    </section>
+
+
+
+ <script src="js/jquery-2.1.4.min.js"></script>
+ <script src="js/client.js"></script>
+    <script src="js/jscolor.min.js"></script>
+ </body>
+ </html>
